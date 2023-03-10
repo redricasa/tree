@@ -19,3 +19,16 @@ function curve(arr, bump) {
 var grades = [2,5]
 curve(grades, 10)// loging out this whole callback returns undefined
 console.log(grades); //log what has been modified instead
+
+function factorial_recursive(num) {
+    if (num <= 1) {
+        return 1;
+    }
+
+    else {
+        return num * factorial_recursive(num-1);//factorial_recursive(num-1) will 
+        //run the whole function until it gets to 1
+    }
+}
+
+console.log(factorial_recursive(-10))
